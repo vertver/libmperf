@@ -24,7 +24,6 @@ typedef struct _SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION
 } SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION, * PSYSTEM_PROCESSOR_PERFORMANCE_INFORMATION;
 
 mp_retcode
-MPERF_API
 mpGetCpuDescriptionWindows(
 	MPERF_CONTEXT* pContext,
 	mp_utf8* pCpuString,
@@ -57,7 +56,6 @@ mpGetCpuDescriptionWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetProcessorsCountWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32* pProcessorsCount
@@ -85,7 +83,6 @@ mpGetProcessorsCountWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetProcessorsLoadPerCoreWindows(
 	MPERF_CONTEXT* pContext,
 	mp_f32** pFloatLoad
@@ -184,7 +181,6 @@ mpGetProcessorsLoadPerCoreWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetProcessorsLoadWindows(
 	MPERF_CONTEXT* pContext,
 	mp_f32* pFloatLoad

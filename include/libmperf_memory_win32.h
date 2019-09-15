@@ -8,21 +8,18 @@
 #pragma once
 
 mp_retcode
-MPERF_API
 mpGetAvailableMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
 );
 
 mp_retcode
-MPERF_API
 mpGetLoadedMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
 );
 
 mp_retcode
-MPERF_API
 mpGetLoadedMemoryByProcessWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
@@ -30,21 +27,18 @@ mpGetLoadedMemoryByProcessWindows(
 
 
 mp_retcode
-MPERF_API
 mpGetAvailableSwapMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
 );
 
 mp_retcode
-MPERF_API
 mpGetLoadedSwapMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
 );
 
 mp_retcode
-MPERF_API
 mpGetLoadedSwapMemoryByProcessWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes

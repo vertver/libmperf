@@ -9,7 +9,6 @@
 #include <tlhelp32.h>
 
 mp_retcode
-MPERF_API
 mpGetProcessesCountWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32* pProcessesCount
@@ -57,7 +56,6 @@ mpGetProcessesCountWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetCurrentProcessIdWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u32* pPID

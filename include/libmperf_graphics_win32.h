@@ -24,19 +24,16 @@ typedef struct
 } MPERF_GPU_NVIDIA_CONTEXT_WINDOWS;
 
 mp_retcode
-MPERF_API
 mpInitializeGraphicsWindows(
 	MPERF_CONTEXT* pContext
 );
 
 mp_retcode
-MPERF_API
 mpUnitializeGraphicsWindows(
 	MPERF_CONTEXT* pContext
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdaptersCountWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -44,7 +41,6 @@ mpGetGraphicsAdaptersCountWindows(
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterLoadWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -53,7 +49,6 @@ mpGetGraphicsAdapterLoadWindows(
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterMemoryLoadWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -62,7 +57,6 @@ mpGetGraphicsAdapterMemoryLoadWindows(
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterEngineFrequencyWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -71,7 +65,6 @@ mpGetGraphicsAdapterEngineFrequencyWindows(
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterMemoryFrequencyWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -80,7 +73,6 @@ mpGetGraphicsAdapterMemoryFrequencyWindows(
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterCoreVoltageWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -91,7 +83,6 @@ mpGetGraphicsAdapterCoreVoltageWindows(
 
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterDescriptionWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -102,7 +93,6 @@ mpGetGraphicsAdapterDescriptionWindows(
 
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterVendorNameWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,
@@ -112,7 +102,6 @@ mpGetGraphicsAdapterVendorNameWindows(
 );
 
 mp_retcode
-MPERF_API
 mpGetGraphicsAdapterDriverVersionWindows(
 	MPERF_CONTEXT* pContext,
 	mp_i32 GpuVendorType,

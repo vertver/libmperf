@@ -11,9 +11,10 @@ mp_retcode
 mpInitializeWindows(
 	MPERF_CONTEXT* pContext
 )
-{
-	HRESULT hr = 0;
+{	
 	mp_retcode ret = 0;
+	HRESULT hr = 0;
+	HMODULE hModule = NULL;
 
 	hr = CoInitializeEx(NULL, COINIT_MULTITHREADED);
 	if (FAILED(hr)) {
@@ -21,6 +22,18 @@ mpInitializeWindows(
 		ret = MPERF_FAILED;
 		return ret;
 	}
+
+	/*
+		Get current module of this library
+	*/
+	if (!GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS | GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT, (LPCSTR)&hModule, &hModule)) {
+		SET_MPERF_ERROR_CONTEXT(MPERF_ERROR_UNDEFINED);
+		ret = MPERF_FAILED;
+		return ret;
+	}
+
+	pContext->pLibInstance = hModule;
+	pContext->pInitedThreadHandle = GetCurrentThread();
 
 	ret = MPERF_SUCCESSES;
 	return ret;

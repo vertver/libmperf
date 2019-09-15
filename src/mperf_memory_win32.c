@@ -9,7 +9,6 @@
 #include <psapi.h>
 
 mp_retcode
-MPERF_API
 mpGetAvailableMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
@@ -30,7 +29,6 @@ mpGetAvailableMemoryWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetLoadedMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
@@ -51,7 +49,6 @@ mpGetLoadedMemoryWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetLoadedMemoryByProcessWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
@@ -72,7 +69,6 @@ mpGetLoadedMemoryByProcessWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetAvailableSwapMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
@@ -93,7 +89,6 @@ mpGetAvailableSwapMemoryWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetLoadedSwapMemoryWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
@@ -114,7 +109,6 @@ mpGetLoadedSwapMemoryWindows(
 }
 
 mp_retcode
-MPERF_API
 mpGetLoadedSwapMemoryByProcessWindows(
 	MPERF_CONTEXT* pContext,
 	mp_u64* pMemoryBytes
